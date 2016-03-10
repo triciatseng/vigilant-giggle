@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <style>
+    body{
+      font-family: sans-serif;
+      margin: 0 auto;
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      font-size: small;
+      text-align: center;
+    }
+table{
+    display: inline-block;
+}
+td{
+  border: 1px solid grey;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <h2>Tic Tac Toe!</h2>
+    <p>
+      <strong>Instructions:</strong> <br />Click on box in the grid to get started.<br /> Game is over when either user or computer gets three in a row, OR draw game.
+    </p>
+<table id="game">
+<tr id="rowOne">
+  <td id="sqOne" onclick="userClick(this)"></td>
+  <td id="sqTwo" onclick="userClick(this)"></td>
+  <td id="sqThree" onclick="userClick(this)"></td>
+</tr>
+<tr id="rowTwo">
+  <td id="sqFour" onclick="userClick(this)"></td>
+  <td id="sqFive" onclick="userClick(this)"></td>
+  <td id="sqSix" onclick="userClick(this)"></td>
+</tr>
+<tr id="rowThree">
+  <td id="sqSeven" onclick="userClick(this)"></td>
+  <td id="sqEight" onclick="userClick(this)"></td>
+  <td id="sqNine" onclick="userClick(this)"></td>
+</tr>
+</table>
+
+<script src="app.js"></script>
+  </body>
+</html>
