@@ -21,7 +21,6 @@ let totalObj= {
 let computerArr=[];
 let userArr=[];
 
-// let computerSq;
 
 function userClick(clicked){
 
@@ -35,7 +34,7 @@ function userClick(clicked){
     } else{
       alert("Pick another spot.");
     }
-    checkUserWin(); //checking too soon?
+    checkUserWin(); 
     catsGame();
     computerTurn();
 
@@ -51,9 +50,6 @@ function computerTurn(){
   let y = gameArr.indexOf(computerNum);
 
   if(y===-1){
-    // var newTdid = computerNum;
-    // var tdidToCreate = new Turn(newTdid);
-    // gameArr2.push(tdidToCreate);
     storeTurn(computerNum);
     computerArr.push(computerNum);
     document.getElementById(computerNum).innerHTML = "O";
@@ -66,7 +62,7 @@ function computerTurn(){
     gameArr.push(x);
   }
 
-//wish it would work only if someone doesn't win
+
 function catsGame(){
   let sum=0;
   for(let i=0;i<gameArr.length;i++){
@@ -144,9 +140,11 @@ function isInArray(array,sq){
 function userWins(){
   alert("User wins!");
   location.reload();
+  return;
 }
 
 function computerWins(){
   alert("Computer wins!");
   location.reload();
+  return;
 }
